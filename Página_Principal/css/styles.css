@@ -109,14 +109,14 @@ h4{
 
 /* scroll */
 .scroll{
-    background-color: rgb(183, 227, 235);
+    background-color: rgb(219, 221, 221);
     box-shadow: .1rem .2rem .3rem #333;
 }
 .scroll img{
     filter: invert(15%);
 }           
 .scroll h1{
-    color: #095de4;
+    color: #080808;
 }
 .scroll nav{
     color: rgb(245, 15, 15);
@@ -167,7 +167,7 @@ li{
 }
 .nav__center{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
 }
@@ -196,6 +196,7 @@ li{
 .carrito__icon i{
     margin-top: .6rem;
     font-size: 3.5rem;
+    align-items: center;
     color: #222;
     /* color: var(--amarillo); */
 }
@@ -220,7 +221,7 @@ li{
     color: var(--amarillo);
 }
 .productos{
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 .productos__center{
     padding: 0 3rem;
@@ -408,10 +409,10 @@ li{
 }
 
 /*Filter*/
-/* .filter{
+.filter{
     padding: 0 2rem;
     width: 100%;
-    margin: 12rem auto 0 auto;
+    margin: 1.5rem auto 0 auto;
 }
 .filter .grid{
     display: grid;
@@ -458,7 +459,7 @@ li{
         max-width: 1092px;
         margin: auto;
     }
-} */
+}
 
 /* Detalles */
 .detalles{

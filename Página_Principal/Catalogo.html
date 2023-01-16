@@ -22,13 +22,12 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./style1.css"> 
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!--Navegation-->
-    <header id="header">
+    <header id="header" >
       <nav class="nav">
         <div class="nav__center container">
           <div class="nav__logo">
@@ -38,54 +37,60 @@
             <span>
               <!-- <i class="bx bxs-watch"></i> -->
             </span>
-            <div class="carrito__icon">
-              <i class="bx bx-cart"></i>
-              <span class="item__total">0</span>
-            </div>
+              <div class="carrito__icon" >
+                <i class="bx bx-cart"></i>
+                <span class="item__total">0</span>
+              </div>
           </ul>
         </div>
       </nav>
-
-
-
-
     </header>
+
+    <section>
+      <div class="menu">
+        <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+          <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" >
+             <img src="./img/x.png" width="30">            
+            </i>
+          </a>
+          <div class="w3-bar-block w3-center">
+            <a href="./Index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Inicio</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Catálogo</a>
+            <a href="./Index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Acerca de nosostros</a>
+            <a href="./Index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contactanos</a>
+          </div>
+        </nav>
+        <!-- Menu icon to open sidebar -->
+      <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+      
+        <img src="./img/menu.png" width="30">  Menu
+    
+      </span>
+      </div>
+    </section>
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-     <img src="./img/x.png" width="30">
-        
-    </i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Inicio</a>
-    <a href="../Proyecto de usabilidad_v1/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Catálogo</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Acerca de nosostros</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contactanos</a>
-  </div>
-</nav>
 
 
     <!--Filter-->
-    <!-- <section class="filter">
+    <section class="filter">
       <div class="grid">
-        <div class="div">
+<!--         <div class="div">
           <label for="buscar"><span><i class="bx bx-search"></i></span></label>
           <input type="text" id="buscar" placeholder="Buscar relojes...">
-        </div>
+        </div> -->
         <div class="category">
           <select id="category" onclick="categoryValue()">
-            <option value="">Marcas</option>
-            <option value="rolex">Rolex</option>
-            <option value="omega">Omega</option>
-            <option value="audemars">Audemars</option>
+            <option value="ropa">Ropa</option>
+            <option value="zapatos">Zapatos</option>
+            <option value="accesorios">Accesorios</option>
+<!--             <option value="audemars">Audemars</option>
             <option value="rolexDay">Rolex Day</option>
             <option value="hublot">Hublot</option>
-            <option value="tag">Tag Heuer</option>
+            <option value="tag">Tag Heuer</option> -->
           </select>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--Productos-->
     <section class="productos">
