@@ -270,6 +270,7 @@ function categoryValue(){
 	}
 }
 
+
 const query = new URLSearchParams(window.location.search)
 let id = query.get('id')
 

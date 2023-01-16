@@ -54,17 +54,48 @@
         },
         {
             "id": 8,
-            "title": "Producto 1",
+            "title": "Producto 8",
             "price": 35,
             "image": "imagenes/Pro8.png",
             "category": "zapatos"
         },
+        
         {
             "id": 9,
-            "title": "Producto 8",
-            "price": 799,
+            "title": "Producto 9",
+            "price": 190,
             "image": "imagenes/Pro9.webp",
             "category": "accesorios"
+        },
+
+        {
+            "id": 10,
+            "title": "Producto 10",
+            "price": 190,
+            "image": "./imagenes/Pro10.png",
+            "category": "accesorios"
+        },
+
+        {
+            "id": 11,
+            "title": "Producto 11",
+            "price": 190,
+            "image": "./imagenes/Pro11.png",
+            "category": "accesorios"
+        },
+
+        {
+            "id": 12,
+            "title": "Producto 12",
+            "price": 190,
+            "image": "./imagenes/Pro12.png",
+            "category": "accesorios"
         }
+
+
+
+        
+
+        
     ]
 }
