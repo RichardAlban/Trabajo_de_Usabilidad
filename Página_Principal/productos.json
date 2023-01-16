@@ -1,0 +1,69 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Producto 1",
+            "price": 101,
+            "image": "imagenes/Pro1.png",
+            "category": "rolex"
+        },
+        {
+            "id": 2,
+            "title": "Producto 1",
+            "price": 104,
+            "image": "imagenes/Pro2.png",
+            "category": "omega"
+        },
+        {
+            "id": 3,
+            "title": "Producto 1",
+            "price": 75,
+            "image": "imagenes/Pro3.png",
+            "category": "audemars"
+        },
+        {
+            "id": 4,
+            "title": "Producto 1",
+            "price": 99,
+            "image": "imagenes/Pro4.png",
+            "category": "hublot"
+        },
+        {
+            "id": 5,
+            "title": "Producto 1",
+            "price": 105,
+            "image": "imagenes/Pro5.png",
+            "category": "rolexDay"
+
+        },
+        {
+            "id": 6,
+            "title": "Producto 1",
+            "price": 85,
+            "image": "imagenes/Pro6.png",
+            "category": "tag"
+
+        },
+        {
+            "id": 7,
+            "title": "Producto 1",
+            "price": 60,
+            "image": "imagenes/Pro7.png",
+            "category": "rolex"
+        },
+        {
+            "id": 8,
+            "title": "Producto 1",
+            "price": 35,
+            "image": "imagenes/Pro8.png",
+            "category": "omega"
+        },
+        {
+            "id": 9,
+            "title": "Producto 1",
+            "price": 799,
+            "image": "imagenes/Pro9.webp",
+            "category": "audemars"
+        }
+    ]
+}
