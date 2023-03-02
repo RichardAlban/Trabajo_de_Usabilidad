@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tienda de Ropa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style2.css">
+<link rel="stylesheet" href="./style1.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/fondo.jpg');
+  min-height: 100%;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+     <img src="./img/x.png" width="30">
+        
+    </i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="./Index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Inicio</a>
+    <a href="./Catalogo.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Catálogo</a>
+    <a href="./Index.html#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Acerca de nosostros</a>
+    <a href="./Index.html#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contactanos</a>
+    <a href="./ayuda.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Ayuda</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+  
+    <img src="./img/menu.png" width="30">  Menu
+
+  </span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Ayuda de compra</b></h1>
+    <p>Ropa deportiva para adultos y niños.</p>
+    <img src="./img/fondo.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./img/fondo.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+       <img src="./img/catalogo.png" width="30"><a href="./Catalogo.html" Ver Catálogo> Ver catalogo</a>
+    </button>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Información de como realizar una compra</h2>
+    <hr class="w3-opacity">
+      <div class="w3-row-padding" style="margin:0 -14px">
+      <div class="w3-half">
+        <img src="./imgAyuda/menu.jpg" style="width:45%">
+      </div>
+    <h2 class="w3-text-grey">Realizar Clic en el Icono de Menu</h2>
+         <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./imgAyuda/cat.jpg" style="width:55%">
+      </div>
+    <h2 class="w3-text-grey">Realizar Clic en la opción Catálogo</h2>
+         <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./imgAyuda/Screenshot 2023-01-16 212654.jpg" style="width:60%">
+      </div>
+    <h2 class="w3-text-grey">Buscar el producto deseado y dar clic en añadir carrito</h2>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./imgAyuda/Screenshot 2023-01-16 212708.jpg" style="width:30%">
+      </div>
+    <h2 class="w3-text-grey">Dar clic en el carrito</h2>
+
+         <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./imgAyuda/Screenshot 2023-01-16 212725.jpg" style="width:65%">
+      </div>
+    <h2 class="w3-text-grey">Verificar que su producto esté en la lista</h2>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+     
+      </div>
+
+      <div class="w3-half">
+       
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Para más información </h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p> <img src="./img/map.png" width="30">| Sangolquí, Pichincha</p>
+      <p>   <img src="./img/phone.png" width="25">  |   Teléfono: 0988224321</p>
+      <p>  <img src="./img/email.png" width="30"> </i>| Email: sportscl@mail.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1994.8790822299977!2d-78.44459414755842!3d-0.3146303905466382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sespe!5e0!3m2!1sen!2sec!4v1673735853824!5m2!1sen!2sec" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    <p>Si está interesado en nuestras promociones escribanos.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Correo Electronio" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Producto interesado" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+           <img src="./img/email.png" width="30"></i> ENVIAR DATOS DE CONTACTO
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <p class="w3-medium">Copyright 2023</p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

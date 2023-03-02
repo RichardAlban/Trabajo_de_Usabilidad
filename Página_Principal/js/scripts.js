@@ -9,12 +9,17 @@ const clearCarritoBtn = document.querySelector(".clear__carrito")
 const itemTotales =document.querySelector(".item__total")
 const detalles = document.getElementById('detalles')
 
+
+const procesarCompra = document.querySelector("#procesarCompra")
+const formulario = document.querySelector('#procesar-pago')
+
+
 let carrito = [];
 let buttonDOM = [];
 
 class UI {
 
-	detalleProducto(id){
+/* 	detalleProducto(id){
 		const filtroDato = productos.filter(item => item.id == id)
 		let result = ""
 		filtroDato.forEach(producto => {
@@ -42,7 +47,8 @@ class UI {
 			`
 		});
 		detalles.innerHTML = result;
-	}
+	} */
+
 
 	renderProductos(productos){
 		let result = ""
@@ -76,6 +82,25 @@ class UI {
 			const id = button.dataset.id;
 			const inCart = carrito.find(item => item.id === parseInt(id, 10));
 
+			if (procesarCompra) {
+				procesarCompra.addEventListener("click", () => {
+				  if (carrito.length === 0) {
+					Swal.fire({
+					  title: "¡Tu carrito está vacio!",
+					  text: "Compra algo para continuar con la compra",
+					  icon: "error",
+					  confirmButtonText: "Aceptar",
+					});
+				  } else {
+					location.href = "compra.html";
+				  }
+				});
+			  }
+			  if(formulario){
+				formulario.addEventListener('submit', enviarCompra)
+			  }
+			  
+
 			if(inCart){
 				button.innerHTML = "En el carrito";
 				button.disabled = true;
@@ -102,6 +127,8 @@ class UI {
 			})
 		})
 	}
+
+	
 
 	setItemValues(carrito){
 		let tempTotal = 0;
@@ -198,6 +225,10 @@ class UI {
 			}
 		});
 	}
+
+
+	
+
 	clearCarrito(){
 		const cartItems = carrito.map(item => item.id)
 		cartItems.forEach(id => this.removeItem(id))
@@ -219,6 +250,8 @@ class UI {
 	singleButton(id){
 		return buttonDOM.find(button => parseInt(button.dataset.id) === id)
 	}
+
+	  
 }
 
 
@@ -270,7 +303,6 @@ function categoryValue(){
 	}
 }
 
-
 const query = new URLSearchParams(window.location.search)
 let id = query.get('id')
 
@@ -293,9 +325,6 @@ document.addEventListener("DOMContentLoaded", async () =>{
 		ui.cartLogic();
 	}
 })
-
-
-
 
 
 const header = document.querySelector("#header");
