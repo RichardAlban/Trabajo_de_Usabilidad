@@ -19,7 +19,7 @@ let buttonDOM = [];
 
 class UI {
 
-/* 	detalleProducto(id){
+	detalleProducto(id){
 		const filtroDato = productos.filter(item => item.id == id)
 		let result = ""
 		filtroDato.forEach(producto => {
@@ -31,15 +31,18 @@ class UI {
 
 						<p class="price"><b>Precio: </b> $${producto.price}</p>
 						<p class="description">
-							<b>Descripcion: </b> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae ad ex sint expedita perspiciatis odit eligendi! Et quia ex aperiam dolorum sunt omnis maiores. Repudiandae delectus iste exercitationem vel?</span>
+							<b>Descripcion: </b> <span>deportivos ligeros con una suela de goma resistente, que te ofrece una excelente tracción en cualquier superficie. Están diseñados con una parte superior de malla transpirable con una cinta de ajuste para un mejor ajuste. La plantilla de los zapatos está hecha de un material acolchado para un mayor confort y amortiguación. Estos zapatos son perfectos para usar en cualquier tipo de actividad física.
+							</span>
 						</p>
 						<p class="description">
-							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates consequuntur in assumenda odit hic, aut cupiditate dolorem aspernatur! Quibusdam iusto magnam vero maxime quisquam voluptatibus minima aliquam molestias, iure ratione commodi, reiciendis quasi.</span>
+							<span>Son una de las prendas más importantes para quienes practican algún tipo de deporte. Estos calzados están diseñados para dar la máxima estabilidad y soporte al usuario, además de que tienen una suela especialmente diseñada para mejorar el agarre al suelo y evitar lesiones. Estos calzados tienen una parte superior generalmente de lona o malla, para permitir la transpiración de los pies, y suelen contar con inserciones de materiales sintéticos para mejorar el ajuste y la comodidad. Finalmente, los calzados deportivos suelen contar con una suela de goma, diseñada para mejorar la amortiguación y permitir una mayor resistencia al desgaste.
+							</span>
 						</p>
 
 						<div class="bottom">
 							<div class="btn__group">
 								<button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
+								<a href="Catalogo.html?" class="btn view">Regresar</a>
 							</div>
 						</div>
 				</div>
@@ -47,7 +50,7 @@ class UI {
 			`
 		});
 		detalles.innerHTML = result;
-	} */
+	}
 
 
 	renderProductos(productos){
@@ -66,6 +69,7 @@ class UI {
           <div class="bottom">
             <div class="btn__group">
               <button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
+			  <a href="producto-detalles.html?id=${producto.id}" class="btn view">Vista</a>
               
             </div>
           </div>

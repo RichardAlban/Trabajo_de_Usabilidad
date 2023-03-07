@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Deportivo</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Box icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./style1.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Navegation-->
+    <header id="header" >
+    <nav class="nav">
+      <div class="nav__center container">
+				<a href="./index.html">
+        <div class="nav__logo">
+          <h1>Catálogo de Compras</h1>
+				</div>
+			</a>
+        <ul class="nav__list">
+          <span>
+            <i class="bx bxs-watch"></i>
+          </span>
+          <div class="carrito__icon">
+            <i class="bx bx-cart"></i>
+            <span class="item__total">0</span>
+          </div>
+        </ul>
+      </div>
+		</nav>
+  </header>
+
+  <section>
+    <div class="menu">
+      <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" >
+           <img src="./img/x.png" width="30">            
+          </i>
+        </a>
+        <div class="w3-bar-block w3-center">
+          <a href="./Index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Inicio</a>
+  <a href="./Catalogo.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Catálogo</a>
+  <a href="./Index.html#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Acerca de nosostros</a>
+  <a href="./Index.html#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contactanos</a>
+  <a href="./ayuda.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Ayuda</a>
+        </div>
+      </nav>
+      <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+    
+      <img src="./img/menu.png" width="30">  Menu
+  
+    </span>
+    </div>
+  </section>
+
+		<main class="container detalles" id="detalles">
+			<!-- <article class="detalle-grid">
+				<img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="" class="img-fluid">
+				<div class="detalles-content">
+					<h3>Relojes Originales</h3>
+					<div class="rating">
+						<span>
+							<i class="bx bxs-star"></i>
+						</span>
+						<span>
+							<i class="bx bxs-star"></i>
+						</span>
+						<span>
+							<i class="bx bxs-star"></i>
+						</span>
+						<span>
+							<i class="bx bxs-star"></i>
+						</span>
+						<span>
+							<i class="bx bx-star"></i>
+						</span>
+					</div>
+						<p class="price"><b>Precio: </b> $55.00</p>
+						<p class="description">
+							<b>Descripcion: </b> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae ad ex sint expedita perspiciatis odit eligendi! Et quia ex aperiam dolorum sunt omnis maiores. Repudiandae delectus iste exercitationem vel?</span>
+						</p>
+						<p class="description">
+							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates consequuntur in assumenda odit hic, aut cupiditate dolorem aspernatur! Quibusdam iusto magnam vero maxime quisquam voluptatibus minima aliquam molestias, iure ratione commodi, reiciendis quasi.</span>
+						</p>
+
+						<div class="bottom">
+							<div class="btn__group">
+								<a href="" class="btn addToCart">Añadir carrito</a>
+							</div>
+						</div>
+				</div>
+			</article> -->
+		</main>
+
+		 <!--Carrito-->
+    
+		 <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+          <!-- <div class="carrito__item">
+
+            <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="reloj">
+            <div>
+              <h3>Relojes Originales </h3>
+              <p class="price">$122</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+					</div>
+					 -->
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+    
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
+  </body>
+</html>
