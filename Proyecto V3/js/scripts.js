@@ -89,14 +89,9 @@ class UI {
 			if (procesarCompra) {
 				procesarCompra.addEventListener("click", () => {
 				  if (carrito.length === 0) {
-					Swal.fire({
-					  title: "¡Tu carrito está vacio!",
-					  text: "Compra algo para continuar con la compra",
-					  icon: "error",
-					  confirmButtonText: "Aceptar",
-					});
+					alert("No hay productos en el carrito", 2000);
 				  } else {
-					location.href = "compra.html";
+					alert("Compra realizada con exito")
 				  }
 				});
 			  }
